@@ -1,13 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './styles/global.scss';
 import reportWebVitals from './reportWebVitals';
+//routers 
+import { RouterProvider, createBrowserRouter, Link } from 'react-router-dom';
+import { routes } from './routes/Routes';
+//redux 
+import { Provider } from 'react-redux';
+import store, { saveState } from './store'
+
+
+store.subscribe(() => {
+  saveState(store.getState());
+});
+
+
+const router = createBrowserRouter(routes);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store} >
+
+      <RouterProvider router={router} />
+
+    </Provider>
   </React.StrictMode>
 );
 
