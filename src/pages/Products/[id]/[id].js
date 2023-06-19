@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 //Redux Imports
-import { fetchProductById, addItemToCart, deleteItemToCart } from '../../../store/slices/products';
+import { fetchProductById } from '../../../store/slices/products';
+import { addItemToCart, deleteItemToCart } from '../../../store/slices/cart';
 import { useDispatch, useSelector } from 'react-redux';
 import DetailCard from '../../../components/Card/DetailCard/DetailCard';
 
@@ -9,11 +10,14 @@ const ProductDetail = () => {
     const { id } = useParams();
     const dispatch = useDispatch();
     const { selectedProduct } = useSelector(state => state.productsReducer);
+    const { productsCart } = useSelector(state => state.cartSliceReducer)
     useEffect(() => {
-        if (id) {
-            dispatch(fetchProductById(id));
+        if (id && productsCart) {
+            dispatch(fetchProductById(id, productsCart));
         }
-    }, [id,])
+    }, [id, productsCart])
+
+
 
     const addToCart = () => {
         dispatch(addItemToCart(selectedProduct));

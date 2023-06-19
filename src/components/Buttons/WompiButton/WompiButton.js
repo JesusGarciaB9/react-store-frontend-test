@@ -4,7 +4,7 @@ import cuid from 'cuid';
 
 const WompiButton = ({ }) => {
 
-    const { totalPrice } = useSelector(state => state.productsReducer);
+    const { totalPrice } = useSelector(state => state.cartSliceReducer);
     const reference = cuid();
     const apiKey = process.env.REACT_APP_API_WOMPI;
     const redirectUrl = process.env.REACT_APP_BASE_URL;

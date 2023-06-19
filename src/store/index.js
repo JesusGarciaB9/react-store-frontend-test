@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import productsReducer from "./slices/products";
+import cartSliceReducer from "./slices/cart";
 
 const loadState = () => {
     try {
@@ -29,7 +30,7 @@ const persistedState = loadState();
 export default configureStore({
     reducer: {
         productsReducer,
+        cartSliceReducer
     },
     preloadedState: persistedState,
-});
-
+}); 

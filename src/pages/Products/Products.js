@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import NavBar from '../../components/Navbar/Navbar';
 import ProductsListHome from '../../components/List/ProductList/ProductList';
 //Functions
@@ -12,16 +12,16 @@ const Products = () => {
     const params = useParams();
     const dispatch = useDispatch();
     const productsR = useSelector(state => state.productsReducer)
+    const cart = useSelector(state => state.cartSliceReducer)
     const location = useLocation();
-    console.log("location ", productsR)
     useEffect(() => {
-        dispatch(fetchProducts(0, 10))
-    }, [])
+        dispatch(fetchProducts(0, 10, cart.productsCart))
+    }, [cart])
 
     const title = getTitle(location.pathname)
     return (
         <div>
-            <NavBar />
+            <NavBar totalPrice={cart.totalPrice} />
             <div className="general-container">
                 <ProductsListHome products={productsR.products} />
                 <div className="detail-container">
@@ -29,7 +29,7 @@ const Products = () => {
                         <h1>{title}</h1>
                     </div>
                     <div className='detail-container__outlet-container'>
-                        {!params.id && location.pathname === '/' ? 'Please choose a product on the left.' : <Outlet context={productsR} />}
+                        {!params.id && location.pathname === '/' ? 'Please choose a product on the left.' : <Outlet context={cart} />}
                     </div>
                 </div>
             </div>

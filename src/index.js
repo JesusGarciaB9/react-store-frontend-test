@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './styles/global.scss';
 import reportWebVitals from './reportWebVitals';
 //routers 
-import { RouterProvider, createBrowserRouter, Link } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { routes } from './routes/Routes';
 //redux 
 import { Provider } from 'react-redux';
