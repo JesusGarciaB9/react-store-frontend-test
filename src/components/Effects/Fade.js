@@ -1,37 +1,36 @@
 import React, { useState, useEffect } from 'react';
-import { CSSTransition } from 'react-transition-group';
 import { useRef } from 'react';
+import { animated, useSpring } from '@react-spring/web'
 
-const duration = 400;
 
-const defaultStyle = {
-    transition: `opacity ${duration}ms ease-in-out`,
-    opacity: 0,
-}
-const transitionStyles = {
-    entering: { opacity: 1 },
-    entered: { opacity: 1 },
-    exiting: { opacity: 0 },
-    exited: { opacity: 0 },
-};
 const FadeComponent = ({ children, id }) => {
     const [isShown, setIsShown] = useState(false);
-    const nodeRef = useRef(null);
+    console.log("isS ", isShown)
+
+
     useEffect(() => {
         setIsShown(false);
+    }, [id])
 
-        setTimeout(() => {
-            setIsShown(true);
-        }, 0);
-    }, [id]);
-    console.log("isShown", isShown)
+    useEffect(() => {
+        if (!isShown) {
+            setTimeout(() => { setIsShown(true); }, 200)
+        }
+    }, [isShown])
+
+    const fade = useSpring({
+        opacity: isShown ? 1 : 0,
+        config: { duration: 200 },
+    })
     return (
-        <CSSTransition nodeRef={nodeRef} in={isShown} classNames='my-node' duration={duration} timeout={300} unmountOnExit   >
-            <div ref={nodeRef} className='my-node-enter-active' >
+        isShown && (
+            <animated.div style={fade}>
                 {children}
-            </div>
-        </CSSTransition>
-    );
+            </animated.div>
+        )
+    )
+
+
 };
 
 export default FadeComponent;
