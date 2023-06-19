@@ -6,9 +6,9 @@ Niufi React Shop Frontend
 
 # URLS DEL PROYECTO
 
-1. despliegue en SURGE.SH : [](http://niufi-react-shop-v2.surge.sh)
+1. despliegue en SURGE.SH : [http://niufi-react-shop-v2.surge.sh](http://niufi-react-shop-v2.surge.sh)
 
-2. alternativamente al estar en git, generé un despliegue automático en : https://react-store-frontend-test.vercel.app/
+2. alternativamente al estar en git, generé un despliegue automático en : [https://react-store-frontend-test.vercel.app/](https://react-store-frontend-test.vercel.app/)
 
 ## Requisitos previos
 
