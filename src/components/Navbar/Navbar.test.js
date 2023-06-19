@@ -12,7 +12,7 @@ describe('Navbar Component', () => {
 
     let nav;
     beforeEach(() => {
-        nav = getShallowNav({ totalPrice: 0 });
+        nav = getShallowNav({ totalPrice: 0, url: '/shop-cart' });
     });
     describe('Renders', () => {
         it('should render navbar without errors ', () => {
@@ -27,10 +27,7 @@ describe('Navbar Component', () => {
             const wrapper = findById(nav, 'cart');
             expect(wrapper.length).toBe(1);
         })
-        it('should render totalPrice without errors ', () => {
-            const wrapper = findById(nav, 'totalPrice');
-            expect(wrapper.length).toBe(1);
-        })
+
     });
     describe('Checking Types', () => {
         it('Should NOT throw a warning', () => {

@@ -21,7 +21,7 @@ const Products = () => {
     const title = getTitle(location.pathname)
     return (
         <div>
-            <NavBar totalPrice={cart.totalPrice} />
+            <NavBar totalPrice={cart.totalPrice} url={location.pathname} />
             <div className="general-container">
                 <ProductsListHome products={productsR.products} />
                 <div className="detail-container">
@@ -29,7 +29,7 @@ const Products = () => {
                         <h1>{title}</h1>
                     </div>
                     <div className='detail-container__outlet-container'>
-                        {!params.id && location.pathname === '/' ? 'Please choose a product on the left.' : <Outlet context={cart} />}
+                        {!params.id && location.pathname === '/' ? <div className='detail-container__outlet-container__message'>Please choose a product on the left.</div> : <Outlet context={cart} />}
                     </div>
                 </div>
             </div>

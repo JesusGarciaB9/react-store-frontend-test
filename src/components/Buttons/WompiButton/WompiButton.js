@@ -26,7 +26,7 @@ const WompiButton = ({ }) => {
         };
     }, [])
     return (
-        <div id="wompi">
+        <div className='wompi-button' id="wompi">
         </div>
 
     )

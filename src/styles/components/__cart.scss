@@ -2,7 +2,7 @@
 
 .cart-list-container {
     max-height: 70vh;
-    overflow-y: scroll; 
+    overflow-y:  auto; 
 }
 
 .cart-item {
@@ -20,6 +20,7 @@
 
 .shop-cart {
     &__total-container {
+        padding: 5px 0;
         display: flex;
         justify-content: flex-end;
         align-items: center;

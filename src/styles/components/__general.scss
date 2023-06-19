@@ -50,4 +50,13 @@ body {
 
 .link {
     text-decoration:none
-}
+} 
+ 
+  .my-node-enter {
+    opacity: 0;
+  }
+  .my-node-enter-active {
+    opacity: 1;
+    transition: opacity 800ms;
+  }
+ 
