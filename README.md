@@ -1,12 +1,14 @@
+# ES
+
 # Nombre del Proyecto
 
 Niufi React Shop Frontend
 
 # URLS DEL PROYECTO
 
-1. despliegue en SURGE.SH : http://niufi-react-shop-v2.surge.sh
+1. despliegue en SURGE.SH : [http://niufi-react-shop-v2.surge.sh](http://niufi-react-shop-v2.surge.sh)
 
-2. alternativamente al estar en git, generé un despliegue automático en : https://react-store-frontend-test.vercel.app/
+2. alternativamente al estar en git, generé un despliegue automático en : [https://react-store-frontend-test.vercel.app/](https://react-store-frontend-test.vercel.app/)
 
 ## Requisitos previos
 
@@ -85,3 +87,95 @@ este tiene las 3 variables que son las 2 credenciales (pública y privada) que d
 
 Jesús García Barrera - (+57) 3012033171 - jesusgarciab3aa@hotmail.com - agradecería mucho tu feedback!!!
 Frase favorita: no olvides la escalabilidad, es importante !!!
+
+# EN
+
+# Project Name
+
+Niufi React Shop Frontend
+
+# PROJECT URLS
+
+1. deployment in SURGE.SH : [](http://niufi-react-shop-v2.surge.sh)
+
+2. alternatively being in git, I generated an automatic deployment in : https://react-store-frontend-test.vercel.app/
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js - (preferably v16.18.0)
+- npm (Node.js package manager)
+- yarn (remember to have ExecutionPolicy enabled on your machine to be able to use it)
+
+## Installation
+
+1. Clone this repository:
+ 
+git clone https://github.com/JesusGarciaB9/react-store-frontend-test.git
+
+2. Place yourself in the repository's folder
+
+cd react-store-frontend-test
+
+3. Run "yarn Install" to install all dependencies.
+
+4. Create your .env , actually I left an .env.example in the root of the project to guide you in the creation of the .env
+this has the 3 variables that are the 2 credentials (public and private) that wompi leaves in the account panel when logging into the commerce platform and also has the Url in which you will run the project, the Prod one is for deployments and the dev one is to run the project locally -- (the REACT_APP_BASE_URL works for redirection after a payment with wompi )
+
+## RUN THE PROJECT LOCALLY
+
+1. After installing dependencies and creating environment variables, you can use the "yarn start" script to run the project in development mode.
+
+2. Remember that if you are going to use the wompi button, you have to enter REACT_APP_API_WOMPI 
+
+## RUN UNIT TESTS 
+
+1. To run the tests you can use the "yarn test" command, this will run some tests created at component level.
+
+2. To run also the tests applied to the state handler (redux), you can press "a" in the command terminal after doing the previous step.
+
+3. The tests consist of basic rendering cases with enzyme, react-testing-library and jest, because enzyme is deprecated for the new react versions, I alternated it in different cases, additionally this also applies to the tests focused on the state handler of the application (redux).
+
+## EXECUTE THE PROJECT BUILD
+
+1. To create a build of the project ready to deploy in surge.sh , you must execute the command "yarn build", remember that you must have in your .env the url to which you want to redirect the project after making a payment in wompi's payment gateway REACT_APP_BASE_URL
+
+2. Then execute the command "cd build".
+
+3. Then "cp index.html 200.html"
+
+## DEPLOY THE PROJECT ARISES
+
+1. Execute the command npx surge
+
+2. Press enter and in the url you must put the url that you defined in the variable REACT_APP_BASE_URL (this with the objective that the redirection after making a payment with wompi redirects to your web)
+
+## PROJECT STRUCTURE AND FOLDERS 
+
+1. assets : in this folder are all the logos and internal resources that are used within the project.
+ 
+2. components : the components that are used inside the application, some of the components have their respective .test file in their folder.
+
+3. fonts : data of the fonts executed in the project for primary and secondary letters, for the magnitude of the project was not necessary a tertiary one.
+
+4. pages: with a little inspiration from next.js, I really like the structure of pages simulating the browser routes, although these are managed from the react-router, I feel that it gives an easy and fast organization to find them.
+
+4. routes: the configuration of routes that the project has.
+
+5. store: the configuration of the store for the handling of states, the basic structure of a project with redux/toolkit is used, with their respective slices and the combination of the same ones in the index, a slice is created to handle the products that are seen in the view and another one to handle the user's shopping cart.
+
+6. styles: unlike the standard design patterns in which the .scss is located in the folder of the component right next to it, I prefer to have the styles centralized, organized and managed by an import that includes them.
+
+7. utils: here we have the product db, some generic functions for testing and for the application, remember that the redux/toolkit is configured with localstorage, so if you executed the project in development you will have the values of the db cached, although you do not have data in the same one.
+
+8. the rest of the files are standard for the project set up.
+
+9. if you see that in the states is used a take and a skip, it was because I thought it as the beginning of a solution with pagination by backend, consider it as a take and an offset, since the db is a file all the calculations were executed at array level by frontend, in normal case it should be by a backend.
+
+# CONTACT 
+
+Jesús García Barrera - (+57) 3012033171 - jesusgarciab3aa@hotmail.com - I would really appreciate your feedback!!!!
+Favorite phrase: don't forget scalability, it's important !!!!
+
+Translated with www.DeepL.com/Translator (free version)
