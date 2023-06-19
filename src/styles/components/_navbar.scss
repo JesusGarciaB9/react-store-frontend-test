@@ -1,0 +1,94 @@
+@import '../variables.scss';
+ 
+
+.navbar {  
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; 
+  &__logo-container { 
+    padding:2px;
+    border-radius: 10%;
+    background-color: $primary-color; 
+    &__logo {
+        font-size: 20px;
+        font-weight: bold;
+        background-image: url($bag-url-256);
+        min-height: 70px;
+        min-width: 70px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media (max-width: $breakpoint) {
+            min-height: 40px;
+            min-width: 40px;
+        }
+    } 
+  } 
+  &__cart-container { 
+    border-radius: 2%; 
+    display: flex;
+    gap: 10px; 
+    margin: 0; 
+    flex-direction: row; 
+    width: fit-content;
+    max-width: 100%;
+    place-items: center;
+    font-size: 30px;
+ 
+    .prod {
+      @extend .navbar__cart-container; 
+      padding: 0 10px;
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,18,88,1) 0%, rgba(97,40,149,0.8716736694677871) 85%, rgba(97,40,149,1) 100%);
+      &__cart {
+        @extend .cart-base;  
+        background-image: url($shop-cart-url-128); 
+      }
+    }
+    .shop {
+      @extend .navbar__cart-container; 
+      background:$cuaternary-color; 
+      border: 2px solid $primary-color;
+      &__totalPrice{
+        color:$primary-color; 
+      }
+      &__x-container{
+          width: 50px;
+          height: 50px;
+          background:$secondary-color; 
+          line-height: 50px;
+          color: $white;
+          font-size:  large;
+          text-align: center;
+          @media (max-width: $breakpoint) {
+            width: 30px;
+            height: 30px; 
+            line-height: 30px;
+        }
+      }
+      &__cart {
+        @extend .cart-base;  
+        background-image: url($shop-cart-url-128-purple); 
+      }
+    } 
+    @media (max-width: $breakpoint) {  
+        font-size: 15px;
+    } 
+  }
+
+  .cart-base {
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (max-width: $breakpoint) {
+      height: 20px;
+      width: 40px;
+  }    
+  }
+
+  
+}
