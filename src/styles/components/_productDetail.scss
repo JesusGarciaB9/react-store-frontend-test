@@ -1,0 +1,114 @@
+
+@import '../variables.scss';
+ 
+.detail-container {
+    width: 35%; 
+     
+    @media (max-width: $breakpoint) { 
+      width: 100%;
+    }
+    &__title-container { 
+      width: 100%;
+      border-bottom: $border-style;; 
+    }
+    &__outlet-container {
+      padding: 20px 0;  
+      width: 100%;
+    }
+ 
+    &__detail-card {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; 
+     &__image-container{  
+       text-align: center;
+       width:  calc(100% - 60px);
+       @media (max-width: $breakpoint) {  
+         width:  calc(100% - 40px); 
+       }
+       &__image {
+        max-width: 50%;   
+        max-height: fit-content;  
+        @media (max-width: $breakpoint) {  
+          max-width:60%;  
+        }
+       }
+    }
+    &__detail-title{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media (max-width: $breakpoint) { 
+        flex-direction: column;
+      }     
+      &__name-and-price{ 
+        display: flex;
+        flex-direction: row; 
+        width: 50%;
+        align-items: center;
+        gap: 10px;
+        @media (max-width: $breakpoint) { 
+          width: 100%;
+          flex-direction: column;
+        }   
+      }
+      &__buttons { 
+        display: flex;
+        flex-direction: row; 
+        place-items: center;
+        @media (max-width: $breakpoint) { 
+          width: 100%;
+          place-content: center;
+          padding:10px 0;
+        }   
+         &__button { 
+          width: 30px;
+          height: 30px;  
+          display: flex;
+          flex-direction: row;
+           
+          &__primary {
+             background-color: $primary-color;
+             color: white; 
+             width: 100%;
+             height: 100%;
+             border: none;
+          }
+          &__secondary { 
+            background-color: $tertiary-color;
+            width: 100%;
+            height: 100%;
+            border: none;
+          }
+        } 
+      
+      }
+    }
+    &__description{
+        border-top: $border-style;;
+        border-bottom: $border-style;;
+        padding: 10px 0;
+    }
+    }
+  
+  }
+
+  .quantity-container{
+    background-color: $primary-color;
+    border-radius: 100%;
+    height: 60px;
+    width : 60px;
+    line-height: 60px;
+    text-align: center;
+    color: $white;
+    font-size: xx-large;
+    @media (max-width: $breakpoint) { 
+      height: 40px;
+      width : 40px;
+      line-height: 40px;
+   }
+ }
+  

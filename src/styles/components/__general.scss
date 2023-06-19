@@ -1,0 +1,53 @@
+h1 { 
+    font-size: x-large;  
+    color: $primary-color;
+    font-family: 'Mont';
+    margin:0 auto;
+    min-height: 32.8px;
+}
+
+h2 {
+    font-size: medium;  
+    color: $black;
+    font-family: 'Mont';
+    margin:0 auto;   
+}
+
+h3 {
+    font-size: medium;  
+    color: $primary-color;
+    font-family: 'Mont';
+    margin:0 4px;
+    font-size: x-large;  
+}
+
+h4 {
+    color: $white;
+    font-family: 'Mont';
+    margin:0 auto;   
+    text-decoration: none;
+    font-size: x-large;  
+}
+
+body {
+    font-family: 'MontSecondary';
+    padding:0 10px; 
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../../fonts/Mont.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontSecondary';
+    src: url('../../fonts/MontSecondary.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.link {
+    text-decoration:none
+}

@@ -1,0 +1,33 @@
+@import '../variables.scss';
+
+.cart-list-container {
+    max-height: 70vh;
+    overflow-y: scroll; 
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: $border-style;
+    &__image{
+        max-width: 100px;
+        
+    }
+}
+
+.shop-cart {
+    &__total-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.total {
+    color: $tertiary-color;
+    font-weight: 700;
+    font-size: x-large;
+}

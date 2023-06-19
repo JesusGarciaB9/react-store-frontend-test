@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Xiaomi Redmi Note 12 4G 128Gb / 4Ram / 50Mp Azul",
+        "price": 718900,
+        "imagesUrl": [
+            "/images/productsImages/xiaomi-redmi-note.png",
+            "/images/productsImages/xiaomi-redmi-noteBig.png"
+        ],
+        "category": "Celulares",
+        "description": "XIAOMI REDMI NOTE 12 4G Acepta el desafio! Características Principales: - Equipo totalmente nuevo en caja.- Libre de fábrica para cualquier compañía. - Procesador: Snapdragon® 685 2,8 GHz - Gpu: Adreno 610  - Pantalla: 6,67 AMOLED"
+    },
+    {
+        "id": 2,
+        "name": "SAMSUNG Galaxy A22 5G 128 GB Gris",
+        "price": 685951,
+        "imagesUrl": [
+            "/images/productsImages/samsumg-galaxy.png",
+            "/images/productsImages/samsumg-galaxyBig.png"
+        ],
+        "category": "Celulares",
+        "description": "Expande tu visión a la pantalla Infinity-V Display de 6,6 pulgadas del Galaxy A22 5G y descubre lo que te has estado perdiendo. Gracias a la tecnología FHD+, tu contenido diario luce mejor: nítido, claro y definido. Además, la pantalla extrafluida mantiene la vista relajada, ya sea que estés jugando o navegando."
+    },
+    {
+        "id": 3,
+        "name": "iPhone 11 128 GB Blanco",
+        "price": 2336688,
+        "imagesUrl": [
+            "/images/productsImages/Iphone11.png",
+            "/images/productsImages/Iphone11Big.png"
+        ],
+        "category": "Celulares",
+        "description": "El iPhone 11 es el sucesor del iPhone Xr para el 2019. Este año el iPhone 11 llega con una pantalla de 6.1 pulgadas con resolución Liquid Retina y potenciado por un procesador Apple A13 Bionic con 64GB, 128GB o 256GB de almacenamiento interno. La cámara posterior del iPhone 11 ahora es dual, con un lente regular de 12 MP y otro gran angular de 12 MP, mientras que su cámara frontal es de 12 MP. El iPhone 11 cuenta con una batería de 3110 mAh con carga rápida, parlantes stereo con sonido Dolby Atmos, carga inalámbrica y utiliza reconocimiento de rostro Face ID para seguridad. CELULAR REACONDICIONADO: Este equipo paso por una revisión técnica que garantiza perfecta funcionalidad, el equipo incluye cable de datos genérico, NO incluye manos libres ni cargador, Este dispositivo es original y con esta compra apoyas el cuidado del medio ambiente ya que evitas la fabricación de nuevos dispositivos, adicional podrás ahorrar hasta el 40%."
+    },
+    {
+        "id": 4,
+        "name": "Celular MOTOROLA Moto G52 128 GB Azul",
+        "price": 709900,
+        "imagesUrl": [
+            "/images/productsImages/MotoG.png",
+            "/images/productsImages/Iphone11Big.png"
+        ],
+        "category": "Celulares",
+        "description": "Disfruta al máximo de tu contenido de entretenimiento favorito con el moto G52. Observa el contraste infinito de la pantalla OLED de 6.6'' y aprovecha al maximo su taza de refresco de 90 Hz. Siente el sonido multidimensional que ofrece el audio Dolby Atmos con el que cuenta el moto G52. ¡Compra el tuyo ahora!."
+    },
+    {
+        "id": 5,
+        "name": "Celular Tecno Spark 10 Pro 256Gb 8Gb+8Gb Ram Negro",
+        "price": 779900,
+        "imagesUrl": [
+            "/images/productsImages/tecnoSpark.png",
+            "/images/productsImages/tecnoSparkBig.png"
+        ],
+        "category": "Celulares",
+        "description": "El espectacular Tecno Spark 10 Pro, es el futuro del rendimiento en terminales móviles con esta generación que te permite alcanzar hasta 18 GB de memoria RAM, sumando 8 GB de memoria virtual a la pre instalada de 8 GB, eso te brindará una respuesta en su funcionamiento que difícilmente pueda ser igualada por otro móvil de su categoría; su increíble capacidad de procesamiento contrasta con unas maravillosas cámaras con un registro asombroso y un diseño exterior espectacular que guarda su súper batería de 5000 mAh para que pases muchísimas horas sin tener que recargar. Es liviano, robusto y potente y tiene todos para las exigencias de hoy, desde los juego en línea más demandantes, hasta la grabación de video en altísima calidad, no pierdas la oportunidad de adquirir un móvil insuperable."
+    },
+    {
+        "id": 6,
+        "name": "Celular Tecno Spark 10 Pro 256Gb 8Gb+8Gb Ram Negro",
+        "price": 779900,
+        "imagesUrl": [
+            "/images/productsImages/tecnoSpark.png",
+            "/images/productsImages/tecnoSparkBig.png"
+        ],
+        "category": "Celulares",
+        "description": "El espectacular Tecno Spark 10 Pro, es el futuro del rendimiento en terminales móviles con esta generación que te permite alcanzar hasta 18 GB de memoria RAM, sumando 8 GB de memoria virtual a la pre instalada de 8 GB, eso te brindará una respuesta en su funcionamiento que difícilmente pueda ser igualada por otro móvil de su categoría; su increíble capacidad de procesamiento contrasta con unas maravillosas cámaras con un registro asombroso y un diseño exterior espectacular que guarda su súper batería de 5000 mAh para que pases muchísimas horas sin tener que recargar. Es liviano, robusto y potente y tiene todos para las exigencias de hoy, desde los juego en línea más demandantes, hasta la grabación de video en altísima calidad, no pierdas la oportunidad de adquirir un móvil insuperable."
+    }
+]
